@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-comment</title>
+</head>
+<body>
+    <h1>I am creating a comment section</h1>
+    <div id="self-comment-container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam reprehenderit veritatis assumenda accusamus autem architecto provident nemo quisquam corporis perferendis ex esse tenetur itaque, aliquam animi repellat quis. Repudiandae commodi facere non inventore fuga iure sint quod hic nulla.</p>
+        <p>Repellendus dignissimos corrupti exercitationem doloremque laudantium magnam omnis dolorum dolore cum iure pariatur consequatur hic, blanditiis totam, cumque est. Aut incidunt esse ipsam alias sint amet. Eum, eos, repellendus pariatur aliquid amet, iste officiis nobis mollitia deleniti deserunt temporibus dolorem?</p>
+        <p>Dicta totam voluptates dolor, odit esse qui consequuntur consequatur voluptas vero iure earum dolorum illo officia porro nesciunt cum, voluptate excepturi ipsa sequi veritatis eaque? Veritatis dolores omnis possimus illo quasi laudantium iure porro voluptas odit, ullam, fugiat laborum suscipit.</p>
+    </div>
+    <div>
+        <textarea name="" id="self-comment" cols="70" rows="6"></textarea>
+        <br><br>
+        <button id="btn-comment">self comment</button>
+    </div>
+    <script>
+        document.getElementById('btn-comment').addEventListener('click', function(){
+            const commentBox = document.getElementById('self-comment');
+            const newComment = commentBox.value;
+
+            const selfCommentContainer = document.getElementById('self-comment-container');
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            selfCommentContainer.appendChild(p);
+            // console.log(newComment)
+            commentBox.value = '';
+        })
+    </script>
+</body>
+</html>

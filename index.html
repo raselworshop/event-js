@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event JavaScript DOM</title>
+</head>
+<body>
+    <h1>Dom special class</h1>
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="console.log(57)">another button</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor='yellow'">click me to change colour</button>
+    <button onclick="makeRed()">Make red</button>
+    <button id="make-blue">Make blue</button>
+    <button id="make-purple">Make purple</button>
+    <button id="make-pink">Make pink</button>
+    <button id="make-green">Make green</button>
+    <button id="make-goldenrod">Make goldenrod</button>
+    <button onclick="makeDef()">Make default</button>
+    <script src="js-files/events.js"></script>
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor='red';
+        }
+        // const goldenrodButton = document.getElementById('make-goldenrod');
+
+
+    </script>
+</body>
+</html>
